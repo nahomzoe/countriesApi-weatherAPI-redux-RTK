@@ -1,7 +1,9 @@
 import React, { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import { addItem } from "../features/favorites/favoritesSlice";
 import { removeItem } from "../features/favorites/favoritesSlice";
+import { HeartSwitch } from "@anatoliygatt/heart-switch";
 import {
   Box,
   Card,
@@ -15,7 +17,7 @@ import {
   List,
   Paragraph,
 } from "grommet";
-import { Like, Undo } from "grommet-icons";
+// import { Like, Undo } from "grommet-icons";
 
 const data = [];
 
@@ -40,7 +42,7 @@ const CountryCard = ({ country }) => {
       <Box pad="large" gap="medium" width="medium" margin={"auto"}>
         <Card pad="small" gap="medium" align="start">
           <Anchor href="#">
-            <Image fit="cover" fill src={flags.png} />
+            <Image fit="cover" fill src={flags.png} a11yTitle="flag" />
           </Anchor>
 
           <CardHeader>{name.common}</CardHeader>
@@ -80,19 +82,28 @@ const CountryCard = ({ country }) => {
           </Box>
 
           <CardFooter>
-            <Button
-              primary
-              size="small"
-              color="#c63e55"
-              href="#"
+            <Link
               to={{
                 pathname: `/countriesList/${cca3}`,
               }}
               state={country}
               variant="primary"
+            >
+              <Button size="small" color="#c63e55">
+                See more
+              </Button>
+            </Link>
+            {/* <Button
+              primary
+              size="small"
+              color="#c63e55"
+              href="./SingleCountry"
+              to={`/countriesList/${cca3}`}
+              state={{ country: country }}
+              // variant="primary"
               label="See more"
-            />
-            {!isFav && (
+            /> */}
+            {/* {!isFav && (
               <Button
                 size="small"
                 color="#c63e55"
@@ -116,6 +127,38 @@ const CountryCard = ({ country }) => {
                 }}
                 icon={<Undo />}
                 primary
+              />
+            )} */}
+            {!isFav && (
+              <HeartSwitch
+                size="sm"
+                inactiveTrackFillColor="#dfe1e9"
+                inactiveTrackStrokeColor="#dfe1e9"
+                activeTrackFillColor="#c63e55"
+                activeTrackStrokeColor="#c63e55"
+                inactiveThumbColor="#ecfeff"
+                activeThumbColor="#ecfeff"
+                checked={checked}
+                onChange={(event) => {
+                  setChecked(event.target.checked);
+                  dispatch(addItem(country));
+                }}
+              />
+            )}
+            {isFav && (
+              <HeartSwitch
+                size="sm"
+                inactiveTrackFillColor="#dfe1e9"
+                inactiveTrackStrokeColor="#dfe1e9"
+                activeTrackFillColor="#c63e55"
+                activeTrackStrokeColor="#c63e55"
+                inactiveThumbColor="#ecfeff"
+                activeThumbColor="#ecfeff"
+                checked={!checked}
+                onChange={(event) => {
+                  setChecked(event.target.checked);
+                  dispatch(removeItem(country));
+                }}
               />
             )}
           </CardFooter>

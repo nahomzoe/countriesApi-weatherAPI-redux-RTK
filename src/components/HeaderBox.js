@@ -1,4 +1,5 @@
 import React from "react";
+import getAll from "../services/favorites";
 
 import {
   Anchor,
@@ -13,6 +14,7 @@ import {
 import { Grommet as GrommetIcon, Menu as MenuIcon } from "grommet-icons";
 
 const HeaderBox = () => {
+  const favorites = getAll();
   return (
     // Uncomment <Grommet> lines when using outside of storybook
     <Grommet>
@@ -66,7 +68,7 @@ const HeaderBox = () => {
                 <Anchor href="/favList" label="Favorites" color="#c63e55" />
                 <Stack anchor="top-right">
                   <Box background="orange" pad={{ horizontal: "xsmall" }} round>
-                    <Text size="small">4</Text>
+                    <Text size="small">{favorites.length}</Text>
                   </Box>
                 </Stack>
               </Box>
