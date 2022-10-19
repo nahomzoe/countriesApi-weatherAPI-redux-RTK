@@ -26,17 +26,15 @@ const placeProps = (name, color, showDrop) => ({
 
 const Home = () => {
   const favorites = getAll();
-  console.log(favorites);
   const [showDrops, setShowDrops] = React.useState(true);
   const mappedFavs = favorites.map((fav) => {
-    console.log({ fav });
     return {
       location: [fav.latlng[0], fav.latlng[1]],
       ...placeProps(fav.capital, "graph-1", showDrops),
     };
   });
   return (
-    <Box align="center" pad="large" margin="2rem">
+    <Box align="center" pad="large" margin="0">
       <CheckBox
         label="I have been here"
         checked={showDrops}

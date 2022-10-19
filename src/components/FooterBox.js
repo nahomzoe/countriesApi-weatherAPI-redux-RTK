@@ -11,16 +11,13 @@ import { Anchor, Box, Footer, Text, Grommet } from "grommet";
 
 const FooterBox = () => {
   return (
-    // Uncomment <Grommet> lines when using outside of storybook
     <Grommet>
       <Box>
-        {/* <Main background="light-2" elevation="large" pad="medium" gap="large">
-          <Text margin="small" size="xsmall">
-            Main Content
-          </Text>
-          <Box flex />
-        </Main> */}
-        <Footer background="#fafafd" pad="small">
+        <Footer
+          background="#000000"
+          pad="medium"
+          style={{ position: "sticky", bottom: 0, width: "1600px" }}
+        >
           <Box align="center" direction="row" gap="xsmall">
             <GrommetIcon color="#040404" size="medium" />
             <Text alignSelf="center" color="#c63e55" size="small">
@@ -41,7 +38,7 @@ const FooterBox = () => {
             <Anchor
               a11yTitle="Follow us on Twitter"
               href="https://github.com/"
-              icon={<Github color="#101011" />}
+              icon={<Github color="white" />}
             />
           </Box>
           <Text textAlign="center" size="xsmall">

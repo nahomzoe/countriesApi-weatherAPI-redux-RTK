@@ -16,11 +16,19 @@ import { Grommet as GrommetIcon, Menu as MenuIcon } from "grommet-icons";
 const HeaderBox = () => {
   const favorites = getAll();
   return (
-    // Uncomment <Grommet> lines when using outside of storybook
     <Grommet>
-      <Header background="#fafafd" pad="medium" height="xsmall">
+      <Header
+        background="#000000"
+        pad="medium"
+        height="xsmall"
+        style={{
+          position: "fixed",
+          top: 0,
+          width: "1600px",
+        }}
+      >
         <Anchor
-          href="https://tools.grommet.io/"
+          href="/"
           icon={<GrommetIcon color="#040404" />}
           label="Countries API"
           color="#c63e55"
@@ -36,11 +44,11 @@ const HeaderBox = () => {
                   items={[
                     {
                       label: <Box pad="small">Home</Box>,
-                      href: "https://v2.grommet.io/",
+                      href: "/",
                     },
                     {
                       label: <Box pad="small">Countries</Box>,
-                      href: "https://github.com/grommet/grommet/issues",
+                      href: "/countriesList",
                     },
                     {
                       label: (
@@ -52,7 +60,7 @@ const HeaderBox = () => {
                           Favorites
                         </Box>
                       ),
-                      href: "https://github.com/grommet/grommet/issues",
+                      href: "/favList",
                     },
                   ]}
                 />

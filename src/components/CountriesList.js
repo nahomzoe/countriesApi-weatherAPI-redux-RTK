@@ -21,7 +21,6 @@ import { Search } from "grommet-icons";
 const CountriesList = () => {
   const dispatch = useDispatch();
   const countriesList = useSelector((state) => state.countries.countries);
-  // const favoritesList = useSelector((state) => state.favorites.favorites);
   const loading = useSelector((state) => state.countries.isLoading);
   const searchInput = useSelector((state) => state.countries.search);
 

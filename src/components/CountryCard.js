@@ -17,7 +17,6 @@ import {
   List,
   Paragraph,
 } from "grommet";
-// import { Like, Undo } from "grommet-icons";
 
 const data = [];
 
@@ -93,42 +92,7 @@ const CountryCard = ({ country }) => {
                 See more
               </Button>
             </Link>
-            {/* <Button
-              primary
-              size="small"
-              color="#c63e55"
-              href="./SingleCountry"
-              to={`/countriesList/${cca3}`}
-              state={{ country: country }}
-              // variant="primary"
-              label="See more"
-            /> */}
-            {/* {!isFav && (
-              <Button
-                size="small"
-                color="#c63e55"
-                checked={checked}
-                onChange={(event) => {
-                  setChecked(event.target.checked);
-                  dispatch(addItem(country));
-                }}
-                icon={<Like />}
-                primary
-              />
-            )}
-            {isFav && (
-              <Button
-                size="small"
-                color="#c63e55"
-                checked={!checked}
-                onChange={(event) => {
-                  setChecked(event.target.checked);
-                  dispatch(removeItem(country));
-                }}
-                icon={<Undo />}
-                primary
-              />
-            )} */}
+
             {!isFav && (
               <HeartSwitch
                 size="sm"
