@@ -34,7 +34,7 @@ const Home = () => {
     };
   });
   return (
-    <Box align="center" pad="large" margin="0">
+    <Box align="center" pad="large" margin="1.7rem">
       <CheckBox
         label="I have been here"
         checked={showDrops}

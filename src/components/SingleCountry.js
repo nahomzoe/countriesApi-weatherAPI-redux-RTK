@@ -31,7 +31,7 @@ const SingleCountry = () => {
   }, [latlng]);
 
   return (
-    <Grommet style={{ margin: "2rem" }}>
+    <Grommet style={{ margin: "5rem" }}>
       <Grid
         columns={size !== "medium" ? "medium" : "100%"}
         gap="large"
@@ -41,8 +41,8 @@ const SingleCountry = () => {
         <Image
           alt="capital city"
           style={{
-            height: "14rem",
-            width: "28rem",
+            height: "10rem",
+            width: "24rem",
             borderRadius: "9px",
             margin: "auto",
           }}
@@ -92,7 +92,7 @@ const SingleCountry = () => {
           </Text>
         </Box>
       </Grid>
-      <Box pad="large" background={"white"} fill align="end">
+      <Box pad="medium" background={"white"} fill align="end">
         <Text size="medium"></Text>
       </Box>
       <Box pad="small" background={"white"} fill align="end">
