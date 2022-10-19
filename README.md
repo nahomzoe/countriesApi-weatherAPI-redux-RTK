@@ -5,6 +5,7 @@
 # Description
 
     This is a basic country and weather app made with react/Redux and connected to local storage. It gives some basic info about country and Weather.
+
 # Technologies used
 
 Built with:
@@ -13,19 +14,18 @@ Built with:
     - JS
     - CSS
     - Bootstrap
-    - https://mdbootstrap.com/docs/react/
+    - https://storybook.grommet.io/?path=/story/all--all&globals=theme:base
     - Reactjs
     - Redux(RTK)
     - LocalStorage
-   
 
 # Setup and usage
 
     Deployed and works fine.
 
- 
 
-    - link is coming . . . 
+
+    - link is coming . . .
 
 # Screenshot
 
