@@ -5,7 +5,12 @@
 # Description
 
     This is a basic country and weather app made with react/Redux and connected to local storage. It gives some basic info about country and Weather.
-
+    
+# To start on you local computer
+    - clone ()
+    - npm install
+    - npm start (http://localhost:3000/)
+    
 # Technologies used
 
 Built with:
@@ -23,9 +28,7 @@ Built with:
 
     Deployed and works fine.
 
-
-
-    - link is coming . . .
+    - https://unique-faloodeh-ce5a33.netlify.app
 
 # Screenshot
 
