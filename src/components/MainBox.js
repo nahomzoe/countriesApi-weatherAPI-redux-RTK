@@ -10,7 +10,7 @@ const MainBox = () => {
           background="light-4"
           pad="small"
           style={{
-            background: "#000000",
+            background: "#c63e55",
             position: "fixed",
             top: 90,
             width: "1600px",

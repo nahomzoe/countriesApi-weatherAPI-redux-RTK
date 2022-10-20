@@ -25,6 +25,7 @@ const HeaderBox = () => {
           position: "fixed",
           top: 0,
           width: "1600px",
+          zIndex: "1000",
         }}
       >
         <Anchor
@@ -36,10 +37,12 @@ const HeaderBox = () => {
         <ResponsiveContext.Consumer>
           {(size) =>
             size === "small" ? (
-              <Box justify="end">
+              <Box justify="end" style={{ position: "sticky", top: "5rem" }}>
                 <Menu
                   a11yTitle="Navigation Menu"
-                  dropProps={{ align: { top: "bottom", right: "right" } }}
+                  dropProps={{
+                    align: { top: "bottom", right: "right" },
+                  }}
                   icon={<MenuIcon color="brand" />}
                   items={[
                     {
