@@ -1,7 +1,7 @@
 import React from "react";
 import getAll from "../services/favorites";
 
-import { Box, CheckBox, Text, WorldMap } from "grommet";
+import { Box, CheckBox, Text, WorldMap, Clock } from "grommet";
 
 const placeProps = (name, color, showDrop) => ({
   name,
@@ -41,6 +41,7 @@ const Home = () => {
         onChange={() => setShowDrops(!showDrops)}
       />
       <WorldMap places={mappedFavs} />
+      <Clock type="digital" size="large" />
     </Box>
   );
 };

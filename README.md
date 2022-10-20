@@ -41,3 +41,5 @@ Built with:
     - Nahom Asfaw
     - https://github.com/nahomzoe
     - https://www.linkedin.com/in/nahom-asfaw-6b78a6185/
+    _redirects
+    /*    /index.html  200

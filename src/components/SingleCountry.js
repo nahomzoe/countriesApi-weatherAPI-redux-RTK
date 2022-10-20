@@ -11,6 +11,8 @@ import {
   Grid,
   ResponsiveContext,
   Button,
+  Card,
+  Anchor,
 } from "grommet";
 
 const SingleCountry = () => {
@@ -38,17 +40,23 @@ const SingleCountry = () => {
         align="center"
       >
         <Text style={{ fontSize: "30px", margin: "auto" }}>{capital}</Text>
-        <Image
-          alt="capital city"
-          style={{
-            height: "10rem",
-            width: "20rem",
-            borderRadius: "9px",
-            margin: "auto",
-          }}
-          src={`https://source.unsplash.com/featured/1600x900?${capital}`}
-          fluid
-        />
+        <Card pad="small" gap="medium" align="start">
+          <Anchor href="#">
+            <Image
+              fit="cover"
+              fill
+              alt="capital city"
+              style={{
+                height: "10rem",
+                width: "20rem",
+                borderRadius: "9px",
+                margin: "auto",
+              }}
+              src={`https://source.unsplash.com/featured/1080x400?${capital}`}
+              fluid
+            />
+          </Anchor>
+        </Card>
         <Box pad="large">
           <Text style={{ display: "inline - block" }}>
             <Text>Weather</Text>{" "}
