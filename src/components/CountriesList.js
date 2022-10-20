@@ -35,7 +35,14 @@ const CountriesList = () => {
   const size = useContext(ResponsiveContext);
   return (
     <div>
-      <Box fill align="center" justify="start" pad="large" color={"red"}>
+      <Box
+        fill
+        align="center"
+        justify="start"
+        pad="large"
+        color="red"
+        style={{ marginTop: "3rem" }}
+      >
         <Box width="medium" gap="medium">
           <TextInput
             icon={<Search />}

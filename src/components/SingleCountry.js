@@ -42,7 +42,7 @@ const SingleCountry = () => {
           alt="capital city"
           style={{
             height: "10rem",
-            width: "24rem",
+            width: "20rem",
             borderRadius: "9px",
             margin: "auto",
           }}
