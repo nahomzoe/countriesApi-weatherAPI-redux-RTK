@@ -7,7 +7,7 @@
     This is a basic country and weather app made with react/Redux and connected to local storage. It gives some basic info about country and Weather.
     
 # To start on you local computer
-    - clone ()
+    - clone (https://github.com/nahomzoe/countriesApi-weatherAPI-redux-RTK.git)
     - npm install
     - npm start (http://localhost:3000/)
     
