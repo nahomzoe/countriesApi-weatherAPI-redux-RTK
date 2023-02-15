@@ -5,20 +5,20 @@
 # Description
 
     This is a basic country and weather app made with react/Redux and connected to local storage. It gives some basic info about country and Weather.
-    
+
 # To start on you local computer
+
     - clone (https://github.com/nahomzoe/countriesApi-weatherAPI-redux-RTK.git)
     - npm install
     - npm start (http://localhost:3000/)
-    
+
 # Technologies used
 
 Built with:
 
     - HTML
     - JS
-    - CSS
-    - Bootstrap
+    - Grommet
     - https://storybook.grommet.io/?path=/story/all--all&globals=theme:base
     - Reactjs
     - Redux(RTK)
