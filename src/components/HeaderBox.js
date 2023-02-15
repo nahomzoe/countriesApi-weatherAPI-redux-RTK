@@ -24,8 +24,8 @@ const HeaderBox = () => {
         style={{
           position: "fixed",
           top: 0,
-          width: "1600px",
-          zIndex: "1000",
+          width: "100%",
+          zIndex: "100",
         }}
       >
         <Anchor
@@ -78,7 +78,7 @@ const HeaderBox = () => {
                 />
                 <Anchor href="/favList" label="Favorites" color="#c63e55" />
                 <Stack anchor="top-right">
-                  <Box background="orange" pad={{ horizontal: "xsmall" }} round>
+                  <Box background="white" pad={{ horizontal: "large" }} round>
                     <Text size="small">{favorites.length}</Text>
                   </Box>
                 </Stack>

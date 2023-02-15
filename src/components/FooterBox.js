@@ -16,7 +16,7 @@ const FooterBox = () => {
         <Footer
           background="#000000"
           pad="medium"
-          style={{ position: "fixed", bottom: 0, width: "1600px" }}
+          style={{ position: "fixed", bottom: 0, width: "100%", zIndex: 50 }}
         >
           <Box align="center" direction="row" gap="xsmall">
             <GrommetIcon color="#040404" size="medium" />
