@@ -28,7 +28,7 @@ Built with:
 
     Deployed and works fine.
 
-    - https://unique-faloodeh-ce5a33.netlify.app
+    - https://countries-api-weather-api-redux-rtk.vercel.app/
 
 # Screenshot
 
